@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Benchmark For Continual Generative Modeling.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Benchmark For Continual Generative Modeling</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3593LNYVK9"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3593LNYVK9');
+</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="bootstrap-grid.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="load-mathjax.js" async></script>
+</head>
+<body>
+
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Benchmark For Continual Generative Modeling</h1>
+          <div class="is-size-2 publication-authors">
+            <span class="author-block">
+              <a href="">Anonymous</a></span>
+  
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/CGM-Benchmark/CGM_Benchmark"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The ability to continually learn is an essential aspect of human cognition. However, it poses significant challenge to existing approaches in machine learning, which typically rely on identical distributions on both training and test datasets. 
+            While a large body of recent research has explored how to enable discriminative models to learn newly seen classes, the problem of enabling generative models to generate newly seen content has received substantially little attention.
+             We closely analyze continual learning in the generative setting, and characterize it into two types, <i><b>incremental generation</b></i>, where we seek to sequentially generate new classes of images  and <i><b>compositional generation</b></i>,
+              which seeks to generate images with combinations of both newly and previously seen information. We provide a suite of benchmarks to assess continual performance in both settings and illustrate a set of baseline methods for achieving both goals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Benchmark Datasets</h2>
+        <div class="content has-text-justified">
+          <p>
+            <p>Illustrative Examples from the proposed Benchmark Datasets to study incremental and compositional generations. We used all three 
+            datasets: <b>Custom-Blender</b>, <b>Custom-MSCOCO</b>, <b>CIFAR-10</b> to study incremental generations and the first two datasets to study compositional generations.
+          </p>
+          <img src="fig/Illustration_data.jpg"
+               alt="Illustrative Examples from the proposed Benchmark Datasets to study incremental and compositional generations."/>
+          <p>
+              Both Custom MSCOCO and Custom Blender Datasets can be downloaded from <a href="https://drive.google.com/drive/folders/1f0JGXneofa-5ZRXmfP6zv5UD3c3RKopF?usp=sharing" target="_blank">Link</a>.
+          </p>
+          <p>All the details about the loading of dataset, training and evaluation are provided on the github repo <a href="https://github.com/CGM-Benchmark/CGM_Benchmark" target="_blank">here</a>.</p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <!-- <div class="columns is-centered"> -->
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Incremental Generations</h2>
+
+        <div class="content has-text-justified has-text-centered">
+          <p>
+            Example of Incremental generation of images conditioned on labels seen during continual training of diffusion model on <b>Custom-MSCOCO</b> dataset.
+
+          </p>
+        </div>
+        <video autoplay muted loop playsinline height="100%">
+          <source src="fig/incremental_mscoco.mp4" type="video/mp4">
+        <br/>
+      </div>
+      
+    </div>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <!-- <div class="columns is-centered"> -->
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Compositional Continual Generations</h2>
+
+        <div class="content has-text-justified has-text-centered">
+          <p>
+            Example of Compositional generations of images by composing two or more labels/concepts seen during continual training of diffusion model on <b>Custom-Blender</b> dataset.
+
+          </p>
+        </div>
+        <img src="fig/compose_generations.gif">
+
+        <br/>
+      </div>
+      
+    </div>
+    
+
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content column is-full-width ">
+    <h2 class="title">BibTeX</h2>
+    <pre><code></code></pre>
+  </div>
+</section> -->
+
+
+<footer class="footer">
+
+    <div class="columns is-centered">
+      <div class="column is-8 has-text-centered">
+        <div class="content">
+          <p>
+            This website is forked from the
+						<a href="https://nerfies.github.io/">Nerfies</a> and
+						<a href="https://github.com/nerfies/nerfies.github.io">source code</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
